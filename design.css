@@ -1,0 +1,68 @@
+.price-custom_Bx{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+}
+
+.priceBx{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.5em 1em;
+}
+
+.sizeDetail{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.priceDetail{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.ctaBuy{
+    max-width: 350px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ddf;
+    background-color: #17f;
+    border-radius: 12px;
+    text-align: center;
+    margin: 0.2em 0.2em;
+    padding: 0.5em 0.8em;
+    box-shadow: 1px 1px 3px 1px rgba(100, 100, 200, 70%);
+}
+
+.customBx{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.5em 1em;
+}
+
+.ctaWts{
+    background-color: #25D366;
+
+}
+
+.customP{
+    line-height: normal;
+    font-size: 1rem;
+}
+
+.detailP{
+    margin-top: 2rem;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+}
+

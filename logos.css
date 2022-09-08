@@ -1,0 +1,55 @@
+
+.bodySection{
+    margin-top: -1em;
+    position: relative;
+    overflow: scroll;
+    height: 50vh;
+    margin-bottom: 1em;
+}
+
+
+
+.logosNeon img{
+    position: sticky;
+    top: 3em;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.logoDescription{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.8em;
+}
+
+.rangeBx{
+    width: 95%;
+    max-width: 500px;
+    padding: 1em 1.5em;
+    border: 2px solid #aaf;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+
+.rangeBx div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+.rangeBx div output{
+    margin-bottom: 1.5em;
+    font-size: 1.5rem;
+    text-align: right;
+
+}
+
+.ctaWts{
+    align-self: center;
+    width: 80%;
+    max-width: 100px;
+}

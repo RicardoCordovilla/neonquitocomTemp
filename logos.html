@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logos neon led | neonquito.com</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="logos.css">
+    <link rel="stylesheet" href="design.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <section class="navbar">
+        <img src="logos/logo_neonquito.png" alt="logo neon quito" class="logo">
+        <nav>
+            <ul>
+                <li class="navbarLink">
+                    <a href="design.html">Diseñar</a>
+                </li>
+                <li class="navbarLink">
+                    <a href="logos.html">Logos</a>
+                </li>
+                <li class="navbarLink">
+                    <a href="">Catalogo</a>
+                </li>
+
+            </ul>
+        </nav>
+    </section>
+
+    <main>
+        <section class="header">
+            <h2 class="page_title">Imágenes y logos en neon</h2>
+            <h3 class="short_description">Personaliza cualquier imagen o logo en neon led</h3>
+        </section>
+
+        <p>
+            A continuación un ejemplo, desde la imagen a la creacion logo neon.
+            <br>
+            Desliza hacia arriba las imagenes
+        </p>
+        <section class="bodySection" id="bodySection">
+            <section class="logosNeon" id="logosNeon">
+                <img src="images/logos/enceviche_logo.jpg" alt="" id="imgLogo">
+                <img src="images/logos/enceviche_efecto_neon.jpg" alt="" id="imgEfecto">
+                <img src="images/logos/enceviche_neonled.jpg" alt="" id="imgNeon">
+            </section>
+        </section>
+
+        <article class="logoDescription">
+            <a target="_blank" href="https://wa.me/593961777009?text=Hola, deseo personalizar una imagen en neon led"
+                rel="noopener noreferrer" class="ctaWts ctaBuy" id="btnWts">
+                MÁS INFORMACIÓN
+            </a>
+            <p>
+                Envíanos la imagen y las ideas, y nuestro equipo de diseño estará disponible
+                para trabajar en tu creación. Puede ser un logo, lo convertimos a logo neon,
+                puede ser un ícono imagen, lo convertimos a neon led. <br><br>
+                Con este link te ponemos en contacto directamente al whatsapp, para personalizar tu logo neon led.
+                En el mensaje necesitamos un tamaño aproximado y un presupuesto aproximado para poder acoplarlo a tu
+                idea.
+            </p>
+
+            <div class="rangeBx">
+                <div class="priceRange">
+
+                    <h4>Presupuesto aproximado</h4>
+                    <output id="priceNum">50 usd</output>
+                    <input type="range" min="50" max="400" id="priceRango" value="50" oninput="cotizarPrice(this.value)">
+                </div>
+                <hr>
+                <div class="sizeRange">
+
+                    <h4>Tamaño aproximado ancho y/o alto</h4>
+                    <output id="sizeNum">50 cm</output>
+                    <input type="range" min="50" max="120" id="sizeRango" value="50" oninput="cotizarSize(this.value)">
+                </div>
+
+
+                <a target="_blank"
+                    href="https://wa.me/593961777009?text=Hola, deseo personalizar una imagen en neon"
+                    rel="noopener noreferrer" class="ctaWts ctaBuy" id="btnCotizar">
+                    COTIZAR
+                </a>
+            </div>
+
+
+        </article>
+
+
+
+    </main>
+
+    <script src="js/logos.js"></script>
+    
+</body>
+
+</html>

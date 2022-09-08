@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseña en neon led | diseña tu texto en neon | neonquito.com</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="efectoneon.css">
+    <link rel="stylesheet" href="design.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <section class="navbar">
+        <img src="logos/logo_neonquito.png" alt="logo neon quito" class="logo">
+        <nav>
+            <ul>
+                <li class="navbarLink">
+                    <a href="design.html">Diseñar</a>
+                </li>
+                <li class="navbarLink">
+                    <a href="logos.html">Logos</a>
+                </li>
+                <li class="navbarLink">
+                    <a href="">Catalogo</a>
+                </li>
+
+            </ul>
+        </nav>
+    </section>
+
+    <main>
+
+        <h2 class="page_title">Crea tu propio diseño en neon</h2>
+        <h3 class="short_description">Personaliza el texto que desees con efecto neon</h3>
+
+        <article class="designBx">
+            <div class="designBx_header">
+                <button onclick="tabSelect(event,'tab1')" class="designBx_tab tablink tabActive">TEXTO</button>
+                <button onclick="tabSelect(event,'tab2')" class="designBx_tab tablink">ESTILO</button>
+                <button onclick="tabSelect(event,'tab3')" class="designBx_tab tablink">COLOR</button>
+            </div>
+
+
+            <div id="tab1" class="tabBx">
+                <div class="inputNeonBx">
+                    <textarea cols="15" rows="2" class="txtInputNeon" type="text" id="txtInputNeon"
+                        oninput="changetxtneon(this)" placeholder="Ingresar el texto"></textarea>
+                </div>
+
+            </div>
+
+
+            <div id="tab2" class="tabBx" style="display: none;">
+                <fieldset class="fontContainer">
+
+
+                    <!-- |  Ameline |   -->
+                    <input type="radio" name="fuentes" id="Ameline" value="Ameline" class="hide"
+                        onclick="fontSelect(event)">
+                    <label for="Ameline" class="lblRadio fontOption">
+                        <div class="fontBx">
+                            Ameline
+                        </div>
+                    </label>
+
+                    <!-- |  Andalan |   -->
+                    <input type="radio" name="fuentes" id="Andalan" value="Andalan" class="hide"
+                        onclick="fontSelect(event)">
+                    <label for="Andalan" class="lblRadio fontOption">
+                        <div class="fontBx">
+                            Andalan
+                        </div>
+                    </label>
+
+                    <!-- |  Angelina |   -->
+                    <input type="radio" name="fuentes" id="Angelina" value="Angelina" class="hide"
+                        onclick="fontSelect(event)">
+                    <label for="Angelina" class="lblRadio fontOption">
+                        <div class="fontBx">
+                            Angelina
+                        </div>
+                    </label>
+
+                    <!-- |  Ascute |   -->
+                    <input type="radio" name="fuentes" id="Ascute" value="Ascute" class="hide"
+                        onclick="fontSelect(event)">
+                    <label for="Ascute" class="lblRadio fontOption">
+                        <div class="fontBx">
+                            Ascute
+                        </div>
+                    </label>
+
+                    <!-- |  Harshita |   -->
+                    <input type="radio" name="fuentes" id="Harshita" value="Harshita" class="hide"
+                        onclick="fontSelect(event)" checked>
+                    <label for="Harshita" class="lblRadio fontOption">
+                        <div class="fontBx">
+                            Harshita
+                        </div>
+                    </label>
+
+
+                    <!-- |  Better |   -->
+                    <input type="radio" name="fuentes" id="Better" value="Better" class="hide"
+                        onclick="fontSelect(event)" >
+                    <label for="Better" class="lblRadio fontOption">
+                        <div class="fontBx">
+                            Better
+                        </div>
+                    </label>
+
+                    <!-- |  Autography |   -->
+                    <input type="radio" name="fuentes" id="Autography" value="Autography" class="hide"
+                        onclick="fontSelect(event)" >
+                    <label for="Autography" class="lblRadio fontOption">
+                        <div class="fontBx">
+                            Autography
+                        </div>
+                    </label>
+
+                    <!-- |  BlackSign |   -->
+                    <input type="radio" name="fuentes" id="BlackSign" value="BlackSign" class="hide"
+                        onclick="fontSelect(event)" >
+                    <label for="BlackSign" class="lblRadio fontOption">
+                        <div class="fontBx">
+                            BlackSign
+                        </div>
+                    </label>
+
+                    <!-- |  Loverine |   -->
+                    <input type="radio" name="fuentes" id="Loverine" value="Loverine" class="hide"
+                        onclick="fontSelect(event)" >
+                    <label for="Loverine" class="lblRadio fontOption">
+                        <div class="fontBx">
+                            Loverine
+                        </div>
+                    </label>
+
+                    <!-- |  Flowers |   -->
+                    <input type="radio" name="fuentes" id="Flowers" value="Flowers" class="hide"
+                        onclick="fontSelect(event)" >
+                    <label for="Flowers" class="lblRadio fontOption">
+                        <div class="fontBx">
+                            Flowers
+                        </div>
+                    </label>
+
+                    <!-- |  Song |   -->
+                    <input type="radio" name="fuentes" id="Song" value="Song" class="hide"
+                        onclick="fontSelect(event)" >
+                    <label for="Song" class="lblRadio fontOption">
+                        <div class="fontBx">
+                            Song
+                        </div>
+                    </label>
+
+                    <!-- |  Richard |   -->
+                    <input type="radio" name="fuentes" id="Richard" value="Richard" class="hide"
+                        onclick="fontSelect(event)" >
+                    <label for="Richard" class="lblRadio fontOption">
+                        <div class="fontBx">
+                            Richard
+                        </div>
+                    </label>
+
+                    <!-- |  Romantic |   -->
+                    <input type="radio" name="fuentes" id="Romantic" value="Romantic" class="hide"
+                        onclick="fontSelect(event)" >
+                    <label for="Romantic" class="lblRadio fontOption">
+                        <div class="fontBx">
+                            Romantic
+                        </div>
+                    </label>
+
+                    <!-- |  Sacra |   -->
+                    <input type="radio" name="fuentes" id="Sacra" value="Sacra" class="hide"
+                        onclick="fontSelect(event)" >
+                    <label for="Sacra" class="lblRadio fontOption">
+                        <div class="fontBx">
+                            Sacra
+                        </div>
+                    </label>
+
+                    <!-- |  Smooth |   -->
+                    <input type="radio" name="fuentes" id="Smooth" value="Smooth" class="hide"
+                        onclick="fontSelect(event)" >
+                    <label for="Smooth" class="lblRadio fontOption">
+                        <div class="fontBx">
+                            Smooth
+                        </div>
+                    </label>
+
+                    <!-- |  South |   -->
+                    <input type="radio" name="fuentes" id="South" value="South" class="hide"
+                        onclick="fontSelect(event)" >
+                    <label for="South" class="lblRadio fontOption">
+                        <div class="fontBx">
+                            South
+                        </div>
+                    </label>
+
+                    <!-- |  Goblick |   -->
+                    <input type="radio" name="fuentes" id="Goblick" value="Goblick" class="hide"
+                        onclick="fontSelect(event)" >
+                    <label for="Goblick" class="lblRadio fontOption">
+                        <div class="fontBx">
+                            Goblick
+                        </div>
+                    </label>
+
+                    <!-- |  Vintage |   -->
+                    <input type="radio" name="fuentes" id="Vintage" value="Vintage" class="hide"
+                        onclick="fontSelect(event)" >
+                    <label for="Vintage" class="lblRadio fontOption">
+                        <div class="fontBx">
+                            Vintage
+                        </div>
+                    </label>
+
+                    <!-- |  Wonder |   -->
+                    <input type="radio" name="fuentes" id="Wonder" value="Wonder" class="hide"
+                        onclick="fontSelect(event)" >
+                    <label for="Wonder" class="lblRadio fontOption">
+                        <div class="fontBx">
+                            Wonder
+                        </div>
+                    </label>
+
+
+
+                </fieldset>
+
+            </div>
+
+            <div id="tab3" class="tabBx" style="display: none;">
+
+                <fieldset class="fontContainer">
+
+
+                    <!-- |  White |   -->
+                    <input type="radio" name="colors" id="White" value="White" class="hide"
+                        onclick="colorSelect(event)">
+                    <label for="White" class="lblRadio-color" id="lblRadio-color">
+                        <div class="colorBx">
+                            Blanco
+                        </div>
+                    </label>
+
+                    <!-- | Warm White |   -->
+                    <input type="radio" name="colors" id="Calido" value="Calido" class="hide"
+                        onclick="colorSelect(event)">
+                    <label for="Calido" class="lblRadio-color" id="lblRadio-color">
+                        <div class="colorBx">
+                            Cálido
+                        </div>
+                    </label>
+
+                    <!-- | Yellow |   -->
+                    <input type="radio" name="colors" id="Yellow" value="Yellow" class="hide"
+                        onclick="colorSelect(event)">
+                    <label for="Yellow" class="lblRadio-color" id="lblRadio-color">
+                        <div class="colorBx">
+                            Amarillo
+                        </div>
+                    </label>
+
+                    <!-- | Red |   -->
+                    <input type="radio" name="colors" id="Red" value="Red" class="hide" onclick="colorSelect(event)">
+                    <label for="Red" class="lblRadio-color" id="lblRadio-color">
+                        <div class="colorBx">
+                            Rojo
+                        </div>
+                    </label>
+
+                    <!-- | Rosa |   -->
+                    <input type="radio" name="colors" id="Rosa" value="Rosa" class="hide" onclick="colorSelect(event)">
+                    <label for="Rosa" class="lblRadio-color" id="lblRadio-color">
+                        <div class="colorBx">
+                            Rosa
+                        </div>
+                    </label>
+
+                    <!-- | Violeta |   -->
+                    <input type="radio" name="colors" id="Violeta" value="Violeta" class="hide"
+                        onclick="colorSelect(event)">
+                    <label for="Violeta" class="lblRadio-color" id="lblRadio-color">
+                        <div class="colorBx">
+                            Violeta
+                        </div>
+                    </label>
+
+                    <!-- | Cyan |   -->
+                    <input type="radio" name="colors" id="Cyan" value="Cyan" class="hide" onclick="colorSelect(event)">
+                    <label for="Cyan" class="lblRadio-color" id="lblRadio-color">
+                        <div class="colorBx">
+                            Celeste
+                        </div>
+                    </label>
+
+                    <!-- | Azul |   -->
+                    <input type="radio" name="colors" id="Azul" value="Azul" class="hide" onclick="colorSelect(event)">
+                    <label for="Azul" class="lblRadio-color" id="lblRadio-color">
+                        <div class="colorBx">
+                            Azul
+                        </div>
+                    </label>
+
+                    <!-- | Verde |   -->
+                    <input type="radio" name="colors" id="Verde" value="Verde" class="hide"
+                        onclick="colorSelect(event)">
+                    <label for="Verde" class="lblRadio-color" id="lblRadio-color">
+                        <div class="colorBx">
+                            Verde
+                        </div>
+                    </label>
+
+
+                </fieldset>
+            </div>
+
+
+            <div class="neonBx">
+                <textarea cols="15" rows="4" class="neonTxt" type="text" id="neonTxt" disabled
+                    placeholder="Ejemplo">Hola</textarea>
+
+            </div>
+
+
+        </article>
+
+        <article class="detalleBx">
+            <h4 class="detalleBx_header opacity6">Detalle del diseño</h4>
+            <div class="price-custom_Bx">
+                <div class="priceBx box">
+                    <div class="sizeDetail" id="sizeDetail">
+                        <div>
+                            <b>Ancho: </b><span id="anchoTxt"> cm</span>
+                        </div>
+                        <div>
+                            <b>Alto: </b><span id="altoTxt"> cm</span>
+                        </div>
+                    </div>
+                    <br>
+                    <span class="priceDetail" id="priceTxt">
+                        usd
+                    </span>
+                    <br>
+                    <a href="" rel="noopener noreferrer" class="ctaBuy" id="btnBuyText"
+                        onclick="whatsapp(event)">PEDIR</a>
+                    <!-- <a href="" rel="noopener noreferrer" class="ctaWts ctaBuy" id="btnWts" onclick="whatsapp(event)">SOLICITAR</a> -->
+                </div>
+
+                <div class="customBx box">
+                    <span class="customHeader"><b>Personalizado</b></span>
+                    <p class="customP opacity8">
+                        Si deseas un diseño más personalizado, link buttont
+                        dale click al siguiente botón.
+                    </p>
+                    <!-- https://wa.me/593961777009?text=I%27m%20interested%20in%20your%20car%20for%20sale -->
+                    <a target="_blank"
+                        href="https://wa.me/593961777009?text=Hola, deseo personalizar un trabajo en neon led"
+                        rel="noopener noreferrer" class="ctaWts ctaBuy" id="btnWts">
+                        SOLICITAR
+                    </a>
+
+                </div>
+
+            </div>
+            <p class="detailP">
+                Las medidas del texto neon led, son una referencia aproximada, así como también el color y el brillo.
+                Te invitamos a revisar nuestras redes de @neon_quito, para obtener una perspectiva más clara de los
+                acabados en neon flex.
+                <br><br>
+                Dale click aquí abajo para visitar nuestro instagram.
+            <div>
+                <a class="redes" href=""><i class='bx bxl-instagram'></i>@neon_quito</a>
+            </div>
+            </p>
+        </article>
+
+    </main>
+
+
+
+    <script src="js/design.js"></script>
+
+
+</body>
+
+</html>

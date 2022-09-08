@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+:root{
+  --color-azul: #000028;
+  --color-amarillo: #CCFF02;
+  --color-amarillo-primary: #CCFF02;
+  --color-amarillo-second: #ff7300;
+  --color-amarillo-tetrad: #0dff33;
+  --color-amarillo-accent: #3300f0;
+  --color-sombra:#000020;
+  --color-fondo: rgba(0,0,255,0.15);
+  --color-tercero: rgb(255,255,255);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  line-height: 2rem;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  position: relative;
+  background: var(--color-fondo);
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  line-height: 1.75rem;
+  color: var(--color-azul);
+}
+
+main{
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 1.2em;
+}
+
+p {
+  margin-bottom: 1rem;
+  line-height: 2.5rem;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 1rem 0;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+  letter-spacing: -0.1rem
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3{
+  font-size: 1.953rem;
+}
+
+.page_title{
+  margin-top: 1rem;
+  text-align: center;
+}
+.short_description{
+  margin-top: -0.7rem;
+  filter: opacity(0.6);
+  text-align: center;
+}
+p {
+  font-size: 1.6rem;
+  letter-spacing: 0.1;
+  /* padding: 0 3rem; */
+}
+
+.caption {
+  letter-spacing: 0.5rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+small,
+.text_small {
+  font-size: 0.8rem;
+}
+
+header{
+  position: relative;
+}
+
+
+
+.hero {
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+}
+
+
+.parallax {
+  position: relative;
+  width: 100%;
+  background-image: url('images/heros/fotoconluzneonchica_3_m.jpg');
+  background-size: cover;
+  height: 300vh;
+  z-index: -1;
+  opacity: 0.5;
+  background-position: center;
+
+}
+
+
+.ctaHero {
+  position: absolute;
+  width: 100vw;
+  height: 80vh;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 1.5rem;
+  padding-bottom: 2rem;
+  /* background-color: #0dff33; */
+
+}
+
+.cta{
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  background-color: var(--color-azul);
+  padding: 0.8rem 1.6rem;
+  font-size: 1rem;
+  border: 1px solid var(--color-amarillo-accent);
+  border-radius: 24px;
+  color: var(--color-amarillo-primary);
+  box-shadow: 0 0 2px 2px var(--color-amarillo-accent);
+  cursor: pointer;
+}
+
+
+.cta:hover{
+  background-color: var(--color-amarillo-accent);
+}
+
+.cta:active{
+  box-shadow: 0 0 5px 1px var(--color-azul) inset;
+  background-color: var(--color-amarillo-accent) ;
+}
+
+
+
+
+.navbar{
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--color-amarillo-accent);
+  padding: 1rem 1.5rem;
+  height: fit-content;
+  overflow: hidden;
+  height: 3rem;
+  z-index: 2;
+}
+
+.navbar img{
+  height: 2.8rem;
+  object-fit: cover;
+  padding: 0;
+  margin: 0 1rem;
+  align-self: center;
+  display: none;
+}
+
+nav ul{
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5rem;
+  font-weight: 600;
+  width: 100vw;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+
+.navbar a{
+  text-decoration: none;
+  color: var(--color-tercero);
+  padding: 14px;
+
+}
+.navbar a:hover{
+  background-color: var(--color-azul);
+}
+
+.section_container{
+  margin-bottom: 3rem;
+}
+
+
+
+.section_content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.main_contain {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  /* background: #ccc; */
+  /* background: linear-gradient(to bottom, #eeeeee 0%,#B7EAE0 100%); */
+  margin: 2rem 0;
+  padding: 1rem;
+  text-align: left;
+}
+
+.main_contain__p{
+  /* padding-top: 1rem; */
+  width: 100%;
+  text-align: left ;
+}
+
+.side {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 48px;
+  /* width: 140px; */
+  height: fit-content;
+  background: #30b298;
+}
+
+
+.design_imgsBx{
+  /* position: relative; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 1rem 0;
+  
+}
+
+.imgTextos{
+  width: 200px; 
+  aspect-ratio: 1;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 1px 1px 5px var(--color-sombra) ;
+  object-fit: cover;
+}
+
+.opacity6{
+  filter: opacity(0.6);
+}
+.opacity8{
+  filter: opacity(0.8);
+}
+
+.detalleBx_header{
+  margin-top: 1em;
+}
+
+.caption{
+  font-size: 1rem;
+}
+
+.box{
+  padding: 0
+   0.8em;
+  margin: 0;
+  border:  2px solid #aaf;
+  border-radius: 8px;
+}
